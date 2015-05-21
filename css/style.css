@@ -58,6 +58,7 @@ body {
 a {
     text-decoration: none;
     color: #033048;
+    transition: color 0.25s ease;
 }
 
 /******************************************
@@ -105,11 +106,20 @@ nav {
 }
 
 .nav li {
-  display: inline;
-  font-weight: 600;
-  color: #f9e42e;
-  padding-right: 40px;
+    display: inline;
+    font-weight: 600;
+    padding-right: 40px;
+
 }
+
+.nav li a {
+  color: #f9e42e;
+}
+
+.nav li a:hover {
+  color: #FFF;
+}
+
 
 
 
@@ -149,10 +159,20 @@ article p {
   margin-bottom: 30px;
 }
 
+article p:first-letter {
+  font-size:85px;
+  float:left;
+  margin: -20px 20px 0px 0px;
+}
+
 .more {
   font-weight: 600;
   float: right;
   margin-bottom: 50px;
+}
+
+.more:hover {
+  color:#f9e42e;
 }
 
 
@@ -178,10 +198,16 @@ aside a {
 }
 
 
+aside a:hover {
+    color:#f9e42e;
+}
+
 
 .learn {
   font-weight: 600;
 }
+
+
 /* Section 4: SIGN UP; */
 
 
@@ -202,6 +228,22 @@ aside a {
   font-weight: 800;
   color: #FFF;
   text-align: center;
+}
+
+#btn p:hover {
+  color:#f9e42e;
+}
+
+#signDialogue {
+  width:400px;
+  height: 200px;
+  background-color: #033048;
+  margin: 0 auto;
+  padding: 60px;
+  color: #FFF;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
 }
 
 /* Section 6: FOOTER; */
